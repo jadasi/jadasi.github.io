@@ -323,8 +323,7 @@ a.active {
     border: 10px solid #EE4540;
     width: 400px;
     height: 400px;
-    top: 40px;
-    left: 50px;
+    left: 30%;
     z-index: 1
 }
 
