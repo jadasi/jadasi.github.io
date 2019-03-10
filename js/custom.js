@@ -8,7 +8,7 @@ $(window).load(function () {
     $('body').delay(350).css({
         'overflow': 'visible'
     });
-})
+});
 
 $(document).ready(function () {
     "use strict";
