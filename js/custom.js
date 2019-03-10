@@ -102,7 +102,7 @@ $(document).ready(function () {
         });
 
     });
-
+    
 
     // Contact Form 	
     // validate contact form
