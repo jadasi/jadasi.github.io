@@ -2,6 +2,8 @@
 * Resume template
 * Created by : Ahmed Essa
 * website : www.ahmedessa.net
+*
+* Edited by : David Silva
 */
 
 
@@ -314,18 +316,38 @@ a.active {
     padding: 100px 0;
 }
 
-.about-img-div img {
-    margin: 0 auto;
+/*hide about image on mobile*/
+@media screen and (max-width: 1200px) {
+    .hide-on-mobile{
+        display: none;
+    }
 }
 
-.about-border {
-    position: absolute;
-    border: 10px solid #EE4540;
-    width: 400px;
-    height: 400px;
-    left: 30%;
-    z-index: 1;
-}
+    .about-img-div img {
+        margin: 0 auto;
+        width: 500px;
+    }
+
+    .about-border {
+        position: absolute;
+        border: 10px solid #EE4540;
+        width: 450px;
+        height: 450px;
+        left: 15%;
+        z-index: 1;
+    }
+
+    .about-foreground {
+        position: absolute;
+        left: 10%;
+        z-index: 2;
+    }
+
+    .about-background {
+        left: 40%
+    }
+
+
 
 
 /* experience section
@@ -521,8 +543,8 @@ a.active {
     transform: scale(1.02, 1.02);
 }
 
-.portfolio_item:active{
-    transform: scale(2.5,2.5);
+.portfolio_item:active {
+    transform: scale(2.5, 2.5);
     z-index: 1;
 }
 
