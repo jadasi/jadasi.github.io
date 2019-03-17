@@ -102,8 +102,35 @@ $(document).ready(function () {
         });
 
     });
-    
 
+
+    //Services
+    $('.owl-carousel').owlCarousel({
+        margin: 30,
+        responsive: {
+            400: {
+                items: 1
+            },
+            600: {
+                items: 2
+            },
+            1000: {
+                items: 3
+            }
+        }
+    })
+
+    var owl = $('.owl-carousel');
+    owl.owlCarousel();
+    
+        $('.prevBtn').click(function () {
+        owl.trigger('prev.owl.carousel');
+    })
+    
+    $('.nextBtn').click(function () {
+        owl.trigger('next.owl.carousel');
+    })
+    
     // Contact Form 	
     // validate contact form
     $(function () {
