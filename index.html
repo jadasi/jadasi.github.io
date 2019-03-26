@@ -67,12 +67,34 @@
     <!-- about -->
     <div class="section" id="about">
         <div class="container">
-            <div class="col-md-6" data-aos="fade-up">
+            <div class="col-md-6">
                 <h4>01</h4>
-                <h1 class="size-50">Info <br /> About me</h1>
+                <h1 class="size-50">Info <br/> About me</h1>
                 <div class="h-50"></div>
                 <p>A driven and meticulous web and graphic designer with well-rounded experience in
                     Adobe Creative Suite, C# Programming, and various website platform development.</p>
+                <div class="h-50"></div>
+                <h2>Skills</h2>
+                <div class="h-10"></div>
+                <h5>HTML</h5>
+                <div class="skillscontainer">
+                    <div class="skills html"></div>
+                </div>
+
+                <h5>CSS</h5>
+                <div class="skillscontainer">
+                    <div class="skills css"></div>
+                </div>
+
+                <h5>Adobe Photoshop</h5>
+                <div class="skillscontainer">
+                    <div class="skills photoshop"></div>
+                </div>
+
+                <h5>Adobe Illustrator</h5>
+                <div class="skillscontainer">
+                    <div class="skills illustrator"></div>
+                </div>
             </div>
             <div class="col-md-6 about-img-div hide-on-mobile">
                 <div class="about-border clearfix" data-aos="fade-up" data-aos-delay=".5" data-stellar-ratio="1.1"></div>
@@ -405,7 +427,7 @@
         <div class="container">
             <div class="col-md-12">
                 <h4>04</h4>
-                <h1 class="size-50">My Services</h1>
+                <h1 class="size-50">My<br /> Services</h1>
                 <div class="h-50"></div>
             </div>
 
@@ -470,12 +492,12 @@
 
             </div>
             <div class="col-md-8">
-                <form class="contact-bg" id="contact-form" name="contact" method="post" novalidate="novalidate">
-                    <input type="text" name="name" class="form-control" placeholder="Your Name" />
-                    <input type="email" name="email" class="form-control" placeholder="Your E-mail" />
+                <form class="contact-bg" id="contact-form" method="post" action="process.php">
+                    <input type="text" name="name" class="form-control" placeholder="Your Name" required />
+                    <input type="email" name="email" class="form-control" placeholder="Your E-mail" required />
                     <input type="text" name="phone" class="form-control" placeholder="Phone Number" />
-                    <textarea name="message" class="form-control" placeholder="Your Message" style="height:120px"></textarea>
-                    <button id="submit" type="submit" name="submit" class="btn btn-glance">Send</button>
+                    <textarea name="message" class="form-control" placeholder="Your Message" required style="height:120px"></textarea>
+                    <input type="submit" class="btn btn-glance" value="Send">
                     <div id="success">
                         <p class="green textcenter"> Your message was sent successfully! I will be in touch as soon as I can. </p>
                     </div>
@@ -483,8 +505,11 @@
                         <p> Something went wrong, try refreshing and submitting the form again. </p>
                     </div>
                 </form>
+                <div class="footer">
+                    © 2019 David Silva | <a href="https://icons8.com" target="_blank">Icons by Icons8</a>
+                </div>
             </div>
-            <a href="https://icons8.com" target="_blank">Icons by Icons8</a>
+
         </div>
     </div>
     <!-- ./contact -->

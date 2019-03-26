@@ -85,6 +85,10 @@ body {
     height: 50px;
 }
 
+.h-10 {
+    height: 10px;
+}
+
 
 /* preloader
 ==================================================*/
@@ -348,7 +352,37 @@ a.active {
     left: 40%
 }
 
+h5 {
+    font-weight: bold;
+}
 
+.skillscontainer {
+    width: 100%;
+    background-color: #ddd;
+    margin-bottom: 30px;
+    border: 4px
+}
+
+.skills {
+    padding: 5px;
+    background-color: #EE4540;
+}
+
+.html {
+    width: 60%;
+}
+
+.css {
+    width: 70%;
+}
+
+.photoshop {
+    width: 90%;
+}
+
+.illustrator {
+    width: 85%;
+}
 
 
 /* experience section
@@ -521,7 +555,6 @@ a.active {
     position: relative;
     overflow: hidden;
     display: block;
-    border-radius: 4px;
     margin-bottom: 30px;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
     -webkit-transition: .2s;
@@ -644,10 +677,25 @@ a.active {
 .prevBtn {
     transform: rotate(180deg);
     max-width: 32px;
+    margin-top: 100px;
+    transition: .2s;
+
+
+}
+
+.prevBtn:hover {
+    transform: translate(-5px, 0) rotate(180deg);
+
 }
 
 .nextBtn {
     max-width: 32px;
+    margin-top: 100px;
+    transition: .2s;
+}
+
+.nextBtn:hover {
+    transform: translate(5px, 0);
 
 }
 
@@ -775,6 +823,25 @@ fieldset {
     letter-spacing: 2px;
     font-weight: bold;
     width: 100%;
+}
+
+
+/* Footer
+==================================================*/
+
+.footer {
+    text-align: right;
+    padding-top: 20px;
+    background: #121212;
+}
+
+.footer a {
+    color: gray;
+    transition: .2s
+}
+
+.footer a:hover {
+    color: #EE4540
 }
 
 

@@ -1,24 +1,24 @@
 <?php
 
-    $to = "overstepco@gmail.com";
-    $from = $_REQUEST['email'];
-    $name = $_REQUEST['name'];
-    $headers = "From: $from";
-    $subject = "Contact From Website";
-
-    $fields = array();
-    $fields{"name"} = "name";
-    $fields{"email"} = "email";
-    $fields{"phone"} = "phone";
-    $fields{"message"} = "message";
-
+    $name = $_POST['name'];
+    $visitor_email = $_POST['email'];
+    $message = $_POST['message'];
     
 
-    $body = "Here is what was sent:\r\n"; 
+    $email_from = 'overstepco@gmail.com';
+    $email_subject = 'Contact From Website';
+    $email_body = "Name: $name.\n".
+        "Email: $visitor_email\n".
+        "Message: $message";
 
-    foreach($fields as $a => $b){$body .= $b." : ".$_REQUEST[$a]."\r\n"; }
+    $to = "overstepco@gmail.com";
+    $headers = "From: $email_from \r\n";
+    $headers .= "Reply-To: $visitor_email \r\n";
+    
+    mail($to, $email_subject, $email_body, $headers);
+    
+    header("Location: index.html");
 
 
-    $send = mail($to, $subject, $body, $headers);
 
 ?>
