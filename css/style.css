@@ -10,16 +10,18 @@
 /* Table of Content
 ==================================================
 	- Google fonts & font family -
-	- typography -
+	- Typography -
 	- General -
     - Preloader -
 	- Header -
-    - home section -
-    - about section -
-    - experience section -
-    - projects section -
-    - services section -
-    - contact section -
+    - Home Section -
+    - About Section -
+    - Experience Section -
+    - Projects Section -
+    - Services Section -
+    - Contact Section -
+    - Success Page -
+    - Footer -
     - Responsive media queries -
 */
 
@@ -83,6 +85,10 @@ body {
 
 .h-50 {
     height: 50px;
+}
+
+.h-30 {
+    height: 30px;
 }
 
 .h-10 {
@@ -354,6 +360,17 @@ a.active {
 
 h5 {
     font-weight: bold;
+}
+
+h5:before {
+    position: absolute;
+    width: 30px;
+    left: -40px;
+    content: "";
+    display: block;
+    height: 2px;
+    background: #EE4540;
+    top: 9px;
 }
 
 .skillscontainer {
@@ -823,6 +840,47 @@ fieldset {
     letter-spacing: 2px;
     font-weight: bold;
     width: 100%;
+}
+
+
+/* Success Page
+==================================================*/
+
+#Success {
+    background: url(../img/home-bg-2.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+#Success .container {
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%,0)
+}
+
+#Success .center {
+    align-content: center;
+    text-align: center;
+}
+
+
+#Success a {
+    background-color: #EE4540;
+    color: #fff;
+    padding: 10px 40px;
+    border-radius: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    width: 100px;
+    text-align: center;
+    transition: .2s;
+}
+
+#Success a:hover {
+    padding: 10px 45px;
 }
 
 
