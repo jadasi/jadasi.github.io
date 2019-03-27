@@ -362,17 +362,6 @@ h5 {
     font-weight: bold;
 }
 
-h5:before {
-    position: absolute;
-    width: 30px;
-    left: -40px;
-    content: "";
-    display: block;
-    height: 2px;
-    background: #EE4540;
-    top: 9px;
-}
-
 .skillscontainer {
     width: 100%;
     background-color: #ddd;
@@ -589,11 +578,41 @@ h5:before {
     padding: 10px;
 }
 
+.web_preview_container {
+    margin: 100px;
+    height: 80vh;
+}
+
 .web_preview {
-    overflow: scroll;
-    background-color: white;
-    max-height: 80%;
-    max-width: 80%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 90%;
+
+}
+
+.web_preview img {
+    width: 100%;
+}
+
+.web_preview_container a {
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    transform: translateX(-50%);
+    background-color: #EE4540;
+    color: #fff;
+    padding: 10px 40px;
+    border-radius: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    width: 200px;
+    text-align: center;
+    transition: .2s;
+}
+
+.web_preview_container a:hover {
+    width: 220px;
 }
 
 .portfolio_item:hover {
@@ -748,8 +767,14 @@ h5:before {
     color: white;
 }
 
+#contact-form input[type="submit"] {
+    background-color: #EE4540;
+    width: 20%;
+}
+
 #contact p {
     color: lightgray;
+    
 }
 
 #contact-form label {
