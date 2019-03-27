@@ -589,12 +589,18 @@ h5:before {
     padding: 10px;
 }
 
+.web_preview {
+    overflow: scroll;
+    background-color: white;
+    max-height: 80%;
+    max-width: 80%;
+}
+
 .portfolio_item:hover {
     opacity: 1;
     -webkit-transform: scale(1.02, 1.02);
     transform: scale(1.02, 1.02);
 }
-
 
 .portfolio_item:hover .item_info {
     opacity: 1;
@@ -852,7 +858,7 @@ fieldset {
     position: absolute;
     left: 50%;
     top: 10%;
-    transform: translate(-50%,0)
+    transform: translate(-50%, 0)
 }
 
 #Success .center {
