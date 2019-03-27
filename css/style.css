@@ -595,11 +595,6 @@ h5:before {
     transform: scale(1.02, 1.02);
 }
 
-.portfolio_item:active {
-    transform: scale(2.5, 2.5);
-    z-index: 1;
-}
-
 
 .portfolio_item:hover .item_info {
     opacity: 1;
