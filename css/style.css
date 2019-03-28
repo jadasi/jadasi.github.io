@@ -946,6 +946,11 @@ fieldset {
 }
 
 @media (max-width: 500px) {
+    
+    header {
+        height: 110px
+    }
+    
     h1 {
         font-family: 'Playfair Display', serif;
         font-size: 50px;
