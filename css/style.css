@@ -590,10 +590,6 @@ h5 {
 }
 
 .web_preview_container a {
-    position: absolute;
-    left: 50%;
-    bottom: 10px;
-    transform: translateX(-50%);
     background-color: #EE4540;
     color: #fff;
     padding: 10px 40px;
@@ -601,13 +597,15 @@ h5 {
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: bold;
-    width: 200px;
     text-align: center;
     transition: .2s;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%)
 }
 
 .web_preview_container a:hover {
-    width: 220px;
+    padding: 10px 50px;
 }
 
 .portfolio_item:hover {
@@ -927,13 +925,7 @@ fieldset {
 /* Responsive media queries
 ==================================================*/
 
-@media (hover: none) {
-    .hide-on-mobile {
-        display: none;
-    }
-}
-
-@media (hover : hover) and (min-width 500) {
+@media (min-width: 991px) {
     .hide-on-desktop {
         display: none;
     }
@@ -942,6 +934,9 @@ fieldset {
 @media (max-width: 991px) {
     .portfolio .categories-grid .categories ul li a {
         padding: 0 2px;
+    }
+        .hide-on-mobile {
+        display: none;
     }
 }
 
