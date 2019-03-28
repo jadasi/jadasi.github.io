@@ -327,12 +327,7 @@ a.active {
     padding: 100px 0;
 }
 
-/*hide about image on mobile*/
-@media screen and (max-width: 1200px) {
-    .hide-on-mobile {
-        display: none;
-    }
-}
+
 
 .about-img-div img {
     margin: 0 auto;
@@ -931,6 +926,18 @@ fieldset {
 
 /* Responsive media queries
 ==================================================*/
+
+@media (hover: none) {
+    .hide-on-mobile {
+        display: none;
+    }
+}
+
+@media (hover : hover) and (min-width 500) {
+    .hide-on-desktop {
+        display: none;
+    }
+}
 
 @media (max-width: 991px) {
     .portfolio .categories-grid .categories ul li a {
