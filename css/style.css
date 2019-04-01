@@ -95,16 +95,24 @@ body {
     height: 10px;
 }
 
--webkit-scrollbar
-{
-	width: 12px;
-	background-color: #F5F5F5;
+.btn {
+    background-color: clear;
+    color: #EE4540;
+    padding: 10px 20px;
+    border-radius: 0;
+    border-width: 2px;
+    border-color: #EE4540;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-align: center;
+    transition: .2s;
 }
 
--webkit-scrollbar-thumb {
-    background-color: #EE4540;
+.btn:hover {
+    color: #fff;
+    background-color: #EE4540
 }
-
 
 /* preloader
 ==================================================*/
