@@ -107,11 +107,13 @@ body {
     font-weight: bold;
     text-align: center;
     transition: .2s;
+    margin-bottom: 4px;
 }
 
 .btn:hover {
-    color: #fff;
-    background-color: #EE4540
+    border-width: 4px;
+    padding: 8px 18px;
+    color: #EE4540
 }
 
 /* preloader
@@ -708,7 +710,7 @@ h5 {
 }
 
 .carosel {
-    width: 70%;
+    width: 80%;
     margin: auto;
 }
 
@@ -719,7 +721,6 @@ h5 {
 
 .item p {
     margin: auto;
-    width: 70%;
 }
 
 .icon {
@@ -784,6 +785,7 @@ h5 {
     color: white;
 }
 
+
 #contact-form input[type="submit"] {
     background-color: #EE4540;
     width: 20%;
@@ -844,45 +846,6 @@ fieldset {
 
 .required {
     color: #EE4540;
-}
-
-#success,
-#error {
-    display: none;
-}
-
-#success p,
-#error p {
-    display: block;
-}
-
-#success p {
-    color: white;
-    font-size: 15px;
-    text-align: center;
-    padding: 10px;
-    border: 2px solid #EE4540;
-    margin-top: 10px;
-}
-
-#error p {
-    color: #EE4540;
-    font-size: 15px;
-    text-align: center;
-    padding: 10px;
-    border: 2px solid #EE4540;
-    margin-top: 10px;
-}
-
-#submit {
-    background-color: #EE4540;
-    color: #fff;
-    padding: 10px 40px;
-    border-radius: 0;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: bold;
-    width: 100%;
 }
 
 
